@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class Bicycle {
+public class Car {
 
     private String modelName;
     private int wheelsCount;
@@ -24,5 +24,9 @@ public class Bicycle {
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    public void checkEngine() {
+        System.out.println("Проверяем двигатель");
     }
 }
