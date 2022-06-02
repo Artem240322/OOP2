@@ -1,24 +1,10 @@
 package ru.skypro;
 
-public class Truck {
-    private String modelName;
-    private int wheelsCount;
+public class Truck extends WheelableTransport{
 
 
-    public String getModelName() {
-        return modelName;
-    }
-
-    public void setModelName(String modelName) {
-        this.modelName = modelName;
-    }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-
-    public void setWheelsCount(int wheelsCount) {
-        this.wheelsCount = wheelsCount;
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 
     public void updateTyre() {
