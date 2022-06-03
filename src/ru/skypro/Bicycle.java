@@ -8,12 +8,17 @@ public class Bicycle extends WheelableTransport implements Serviceable, Wheelabl
     }
 
     @Override
+    public void checkEngine() {
+
+    }
+
+    @Override
     public void updateTyre() {
         System.out.println("Меняем покрышку велосипеда");
     }
 
     @Override
-    void check() {
+    public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
