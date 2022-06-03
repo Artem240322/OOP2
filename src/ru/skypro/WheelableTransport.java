@@ -24,4 +24,6 @@ public abstract class WheelableTransport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+
+    public abstract void checkEngine();
 }
