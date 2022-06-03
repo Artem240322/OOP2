@@ -17,13 +17,13 @@ public class Truck extends WheelableTransport implements Serviceable, Wheelable 
     public void checkEngine() {
         System.out.println("Проверяем двигатель грузовика");
     }
-    public void checkTrailer() {
+    private void checkTrailer() {
         System.out.println("Проверяем прицеп грузовика");
     }
 
 
     @Override
-    void check() {
+    public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
